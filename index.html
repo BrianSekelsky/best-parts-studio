@@ -7,41 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>best parts studio</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;1,9..144,100&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="main-content">
-        <img src="../liz.jp2" />
-        <div>
+        <img src="liz.png" />
+        <div style="width: 20rem;">
+            <h2>
+                best parts
+            </h2>
             <p>
-                <b><i>best parts</i></b>
+                <i>
+                    a new design studio run by <a href="https://elizgab.cargo.site/">elizabeth</a> + <a
+                        href="https://briansekelsky.com/">brian</a>
+                </i>
             </p>
-            <p>
-                a new studio run by <a href="https://elizgab.cargo.site/">elizabeth</a> + <a
-                    href="https://briansekelsky.com/">brian</a>
-            </p>
+            <!-- <p>📧 contact us</p> -->
+            <p>bestparts.studio@gmail.com</p>
         </div>
-        <img src="../brian.jp2" />
+        <img src="brian.png" />
     </div>
 </body>
 
 <style>
+    .fraunces {
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:
+            "SOFT" 0,
+            "WONK" 0;
+    }
+
     body {
         margin: 0;
+        overflow-y: hidden;
+        font-family: Fraunces;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    img {
+        width: 20rem;
+        padding: 4rem;
     }
 
     .main-content {
         height: 100vh;
         width: 100vw;
         display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
+    }
+
+    @media only screen and (min-width: 1250px) {
+        .main-content {
+            flex-direction: row;
+        }
     }
 
     p {
-        margin: 0;
+        margin: 0.5rem;
     }
 </style>
 
